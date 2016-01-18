@@ -10,19 +10,8 @@ public class Ex8Algorithms {
 	 * Output: 10
 	 * */
 	public static int findMax(int[] ints) {
-		if (ints.length < 1) {
-			return 0;
-		}
-		int max = ints[0];
-		
-		for (int i = 1; i < ints.length; i++) {
-			if (ints[i] > max) {
-				max = ints[i];
-			}
-			// You can replace the if statement with the following code
-			// max = Math.max(ints[i], max);
-		}
-		return max;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given an array of integers, return the smallest integer.
@@ -33,19 +22,8 @@ public class Ex8Algorithms {
 	 * Output: -2
 	 * */
 	public static int findMin(int[] ints) {
-		if (ints.length < 1) {
-			return 0;
-		}
-		int min = ints[0];
-		
-		for (int i = 1; i < ints.length; i++) {
-			if (ints[i] < min) {
-				min = ints[i];
-			}
-			// You can replace the if statement with the following code
-			// min = Math.min(ints[i], min);
-		}
-		return min;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given an array of integers, return true if the integers
@@ -56,19 +34,8 @@ public class Ex8Algorithms {
 	 * Output: true
 	 * */
 	public static boolean isSorted(int[] ints) {
-		if (ints.length < 1) {
-			return true;
-		}
-		int first = ints[0];
-		int second;
-		for (int i = 1; i < ints.length; i++) {
-			second = ints[i];
-			if (second < first) {
-				return false;
-			}
-			first = second;
-		}
-		return true;
+		// STUDENT-TODO
+		return false;
 	}
 	
 	/* An easy but inefficient algorithm to sort an array of integers from
@@ -86,27 +53,8 @@ public class Ex8Algorithms {
 	 * Output: {-3, -2, -1, 0, 1, 2, 3}
 	 * */
 	public static int[] sortInts(int[] ints) {
-		if (ints.length < 1) {
-			return ints;
-		}
-
-		int minIndex, temp;
-		for (int i = 0; i < ints.length; i++) {
-			// Find the smallest index of the smallest 
-			// int between index i and the end
-			minIndex = i;
-			for (int j = i; j < ints.length; j++) {
-				if (ints[j] < ints[minIndex]) {
-					minIndex = j;
-				}
-			}
-
-			// Swap the smallest element into position
-			temp = ints[i];
-			ints[i] = ints[minIndex];
-			ints[minIndex] = temp;
-		}
-		return ints;
+		// STUDENT-TODO
+		return null;
 	}
 	
 	/* Given a string, return the number of times a character occurs 
@@ -121,14 +69,8 @@ public class Ex8Algorithms {
 	 * Output: 2
 	 * */
 	public static int numTriples(String str) {
-		int triple = 0;
-		for (int i = 0; i < str.length()-2; i++) {
-			char c = str.charAt(i);
-			if (str.charAt(i+1) == c && str.charAt(i+2) == c) {
-				triple++;
-			}
-		}
-		return triple;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given an array of Integers (either 1 or 2), return 1 if there
@@ -144,16 +86,7 @@ public class Ex8Algorithms {
 	 * 
 	 * */
 	public static int fourInARow(int[] row) {
-		String rowString = "";
-		for (int i = 0; i < row.length; i++){
-			rowString = rowString.concat(Integer.toString(row[i]));
-		}
-		
-		if (rowString.contains("1111")) {
-			return 1;
-		} else if (rowString.contains("2222")) {
-			return 2;
-		}
+		// STUDENT-TODO
 		return 0;
 	}
 

@@ -27,15 +27,6 @@ public class TodoList {
 	 * */
 	public void addTask(String name, String priority, String month, String day)
 			throws NameNotUniqueException, InvalidPriorityException, InvalidMonthException, InvalidDayException, BlankNameException {
-
-		for (Task task: this.tasks) {
-			if (task.getName().equals(name)) {
-				throw new NameNotUniqueException();
-			}
-		}
-
-		Task newTask = new Task(name, priority, month, day);
-		this.tasks.add(newTask);
 	}
 	
 	public String[][] toStringArray() {

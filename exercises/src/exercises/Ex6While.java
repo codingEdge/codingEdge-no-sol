@@ -9,13 +9,8 @@ public class Ex6While {
 	 * Ouput: "WillWillWill" 
 	 * */
 	public static String q1_printNameNumberofTimes(String name, int n) {
-		int i = 0;
-		String s = "";
-		while (i < n) {
-			s = s + name; // Can use concat too
-			i++;
-		}
-		return s;
+		// STUDENT-TODO
+		return "";
 	}
 	
 	/* Given a positive integer, return a new array with n elements,
@@ -25,13 +20,8 @@ public class Ex6While {
 	 * Output: {0, 1, 2, 3}
 	 * */
 	public static int[] q2_createArrayOfIndices(int n) {
-		int i = 0;
-		int[] arr = new int[n];
-		while (i < n) {
-			arr[i] = i;
-			i++;
-		}
-		return arr;
+		// STUDENT-TODO
+		return null;
 	}
 	
 	/* Given an array of integers and an integer i, return the index
@@ -41,15 +31,8 @@ public class Ex6While {
 	 * Output: 3
 	 * */
 	public static int q3_findIndexOfInt(int[] arr, int i) {
-		int x = 0;
-		while (x < arr.length) {
-			if (arr[x] != i) {
-				x++;
-			} else {
-				return x;
-			}
-		}
-		return -1;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	
@@ -60,13 +43,8 @@ public class Ex6While {
 	 * Output: 2
 	 * */
 	public static int q4_zerosAtStart(int[] arr) {
-		int startingZeros = 0;
-		int i = 0;
-		while (i < arr.length && arr[i] == 0) {
-			startingZeros++;
-			i++;
-		}
-		return startingZeros;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given an array of integers, return the sum of all the integers
@@ -75,13 +53,8 @@ public class Ex6While {
 	 * Output: 17
 	 * */
 	public static int q5_totalSumIntArray(int[] arr) {
-		int sum = 0;
-		int i = 0;
-		while (i < arr.length) {
-			sum += arr[i];
-			i++;
-		}
-		return sum;
+		// STUDENT-TODO
+		return 0;
 	}
 	/* Given an array of positive integers, and a threshold max,
 	 * sum the starting values until it reaches the threshold, 
@@ -91,16 +64,8 @@ public class Ex6While {
 	 * Ouput: 3 		(first 3 numbers sum to 9, 1 + 3 + 5 = 9)
 	 * */
 	public static int q6_sumUntilThreshold(int[] arr, int max){
-		int sum = 0;
-		int i = 0;
-		while (sum < max) {
-			if (i >= arr.length) {
-				return 0;
-			}
-			sum += arr[i];
-			i++;
-		}
-		return i;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 }

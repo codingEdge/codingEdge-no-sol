@@ -8,7 +8,8 @@ public class Ex2Integers {
 	 * Output: 2
 	 * */
 	public static int q1_addOne(int i) {
-		return ++i;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given an int i, return an int that is one smaller
@@ -17,7 +18,8 @@ public class Ex2Integers {
 	 * Output: 0
 	 * */
 	public static int q2_minusOne(int i) {
-		return --i;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given two integers a and b, return a multiplied by b
@@ -26,7 +28,8 @@ public class Ex2Integers {
 	 * Output: 8
 	 * */
 	public static int q3_product(int a, int b) {
-		return a * b;
+		// STUDENT-TODO
+		return 0;
 	}
 
 	/* Given two integers a and b, return the remainder of
@@ -36,7 +39,8 @@ public class Ex2Integers {
 	 * Output: 1
 	 * */
 	public static int q4_remainder(int a, int b) {
-		return a % b;
+		// STUDENT-TODO
+		return 0;
 	}
 
 	/* Given a string of numbers, convert it into an int
@@ -47,7 +51,8 @@ public class Ex2Integers {
 	 * Output: 123
 	 * */
 	public static int q5_stringToInt(String numStr) {
-		return Integer.parseInt(numStr);
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given two strings, return the total length of the strings (as an int)
@@ -56,7 +61,8 @@ public class Ex2Integers {
 	 * Output: 10
 	 * */
 	public static int q6_totalStringsLength(String str1, String str2) {
-		return str1.length() + str2.length();
+		// STUDENT-TODO
+		return 0;
 	}
 	
 }

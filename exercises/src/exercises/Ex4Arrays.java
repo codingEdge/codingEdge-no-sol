@@ -9,10 +9,8 @@ public class Ex4Arrays {
 	 * Output: "def"
 	 * */
 	public static String q1_firstString(String[] strs) {
-		if (strs.length < 1) {
-			return "";
-		}
-		return strs[0];
+		// STUDENT-TODO
+		return "";
 	}
 	
 	/* Given an array of strings, return the second string in the array
@@ -22,10 +20,8 @@ public class Ex4Arrays {
 	 * Output: "def"
 	 * */
 	public static String q2_secondString(String[] strs) {
-		if (strs.length < 2) {
-			return "";
-		}
-		return strs[1];
+		// STUDENT-TODO
+		return "";
 	}
 	
 	/* Given an array of integers, return the length of the array
@@ -35,7 +31,8 @@ public class Ex4Arrays {
 	 * Output: 5
 	 * */
 	public static int q3_getArrayLength(int[] intArr) {
-		return intArr.length;
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given an array of integers, return the last integer in the array
@@ -45,10 +42,8 @@ public class Ex4Arrays {
 	 * Output: 10
 	 * */
 	public static int q4_getLastInteger(int[] intArr) {
-		if (intArr.length == 0) {
-			return 0;
-		}
-		return intArr[intArr.length - 1];
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given an odd length array of integers, return the middle integer.
@@ -60,11 +55,8 @@ public class Ex4Arrays {
 	 * Output: 10
 	 * */
 	public static int q5_getMiddleInteger(int[] intArr) {
-		if (intArr.length == 0) {
-			return 0;
-		}
-		int middle = intArr.length / 2;
-		return intArr[middle];
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	
@@ -76,9 +68,7 @@ public class Ex4Arrays {
 	 * Output: {"e", "b", "c", "d", "a"}
 	 * */
 	public static String[] q6_swapStartAndEnd(String[] strArr) {
-		String temp = strArr[0];
-		strArr[0] = strArr[strArr.length - 1];
-		strArr[strArr.length - 1] = temp;
-		return strArr;
+		// STUDENT-TODO
+		return null;
 	}
 }

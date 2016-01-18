@@ -48,10 +48,6 @@ public class Task {
 	 * priority is negative, throw an InvalidPriorityException
 	 */
 	public void setPriority(int priority) throws InvalidPriorityException {
-		if (priority < 0) {
-			throw new InvalidPriorityException();
-		}
-		this.priority = priority;
 	}
 
 	public void setPriority(String priority) throws InvalidPriorityException {
@@ -78,34 +74,6 @@ public class Task {
 	 * starting with a capital. For example, this.dueMonth = "January"
 	 */
 	private void setDueMonth(String dueMonth) throws InvalidMonthException {
-		dueMonth = dueMonth.toLowerCase();
-		if (dueMonth.equals("1") || dueMonth.equals("jan") || dueMonth.equals("january")) {
-			this.dueMonth =  "January";
-		} else if (dueMonth.equals("2") || dueMonth.equals("feb") || dueMonth.equals("february")) {
-			this.dueMonth =  "February";
-		} else if (dueMonth.equals("3") || dueMonth.equals("mar") || dueMonth.equals("march")) {
-			this.dueMonth =  "March";
-		} else if (dueMonth.equals("4") || dueMonth.equals("apr") || dueMonth.equals("april")) {
-			this.dueMonth =  "April";
-		} else if (dueMonth.equals("5") || dueMonth.equals("may")) {
-			this.dueMonth =  "May";
-		} else if (dueMonth.equals("6") || dueMonth.equals("jun") || dueMonth.equals("june")) {
-			this.dueMonth =  "June";
-		} else if (dueMonth.equals("7") || dueMonth.equals("jul") || dueMonth.equals("july")) {
-			this.dueMonth =  "July";
-		} else if (dueMonth.equals("8") || dueMonth.equals("aug") || dueMonth.equals("august")) {
-			this.dueMonth =  "August";
-		} else if (dueMonth.equals("9") || dueMonth.equals("sep") || dueMonth.equals("september")) {
-			this.dueMonth =  "September";
-		} else if (dueMonth.equals("10") || dueMonth.equals("oct") || dueMonth.equals("october")) {
-			this.dueMonth =  "October";
-		} else if (dueMonth.equals("11") || dueMonth.equals("nov") || dueMonth.equals("november")) {
-			this.dueMonth =  "November";
-		} else if (dueMonth.equals("12") || dueMonth.equals("dec") || dueMonth.equals("december")) {
-			this.dueMonth =  "December";
-		} else {
-			throw new InvalidMonthException();
-		}
 	}
 
 	public int getDueDay() {
@@ -118,71 +86,6 @@ public class Task {
 	 * this integer. We assume that this.dueMonth is already set.
 	 */
 	private void setDueDay(int dueDay) throws InvalidDayException {
-		if (dueDay < 1) {
-			throw new InvalidDayException();
-		}
-		switch (this.dueMonth) {
-		case "January":
-			if (dueDay > 31) {
-				throw new InvalidDayException("January");
-			}
-		case "February":
-			 if (dueDay > 28) {
-				 throw new InvalidDayException("February");
-			 }
-			 break;
-		case "March":
-			 if (dueDay > 31) {
-				 throw new InvalidDayException("March");
-			 }
-			 break;
-		case "April":
-			 if (dueDay > 30) {
-				 throw new InvalidDayException("April");
-			 }
-			 break;
-		case "May":
-			 if (dueDay > 31) {
-				 throw new InvalidDayException("May");
-			 }
-			 break;
-		case "June":
-			 if (dueDay > 30) {
-				 throw new InvalidDayException("June");
-			 }
-			 break;
-		case "July":
-			 if (dueDay > 31) {
-				 throw new InvalidDayException("July");
-			 }
-			 break;
-		case "August":
-			 if (dueDay > 31) {
-				 throw new InvalidDayException("August");
-			 }
-			 break;
-		case "September":
-			 if (dueDay > 30) {
-				 throw new InvalidDayException("September");
-			 }
-			 break;
-		case "October":
-			 if (dueDay > 31) {
-				 throw new InvalidDayException("October");
-			 }
-			 break;
-		case "November":
-			 if (dueDay > 30) {
-				 throw new InvalidDayException("November");
-			 }
-			 break;
-		case "December":
-			 if (dueDay > 31) {
-				 throw new InvalidDayException("December");
-			 }
-			 break;
-		}
-		this.dueDay = dueDay;
 	}
 
 	/*

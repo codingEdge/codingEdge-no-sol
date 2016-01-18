@@ -120,35 +120,6 @@ public class TodoBoard {
      * messages should be shown. 
      * */
     public void addNewTask() {
-    	String name = this.newName.getText();
-    	String priority = this.newPriority.getText();
-    	String month = this.newMonth.getText();
-    	String day = this.newDay.getText();
-    	// Use " " rather than "" so that an empty messages take up height
-    	String errorMessage = " ";
-    	try {
-			this.todoList.addTask(name, priority, month, day);
-		} catch (NameNotUniqueException e) {
-			errorMessage = "The task name \"" + name + "\" is not unique.";
-		} catch (BlankNameException e) {
-			errorMessage = "The task name cannot be blank.";
-    	} catch (InvalidPriorityException e) {
-			errorMessage = "\"" + priority + "\" is not a valid task priority.";
-		} catch (InvalidMonthException e) {
-			errorMessage = "\"" + month + "\" is not a valid month.";
-		} catch (InvalidDayException e) {
-			if (e.getMessage() != null) {
-				errorMessage = "\"" + day + "\" is not a valid day in " + e.getMessage() + ".";
-			} else {
-				errorMessage = "\"" + day + "\" is not a valid day.";
-			}
-		} finally {
-    		updateErrorMessage(errorMessage);
-		}
-    	if (errorMessage.equals(" ")) {
-    		updateTaskTable();
-    		clearAddTaskForm();
-    	}
     }
     
     @SuppressWarnings("serial")

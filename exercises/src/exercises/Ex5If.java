@@ -11,10 +11,8 @@ public class Ex5If {
 	 * Output: "zero"
 	 * */
 	public static String q1_isZero(int i) {
-		if (i == 0) {
-			return "zero";
-		}
-		return "non-zero";
+		// STUDENT-TODO
+		return "";
 	}
 	
 	/* Given an integer x, return it absolute value (convert
@@ -25,11 +23,8 @@ public class Ex5If {
 	 * Output: 4
 	 * */
 	public static int q2_absoluteValue(int x) {
-		if (x > 0) {
-			return x;
-		} else {
-			return -1*x;
-		}
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	/* Given two integers x and y, return the larger integer.
@@ -38,11 +33,8 @@ public class Ex5If {
 	 * Output: 5
 	 * */
 	public static int q3_getMax(int x, int y) {
-		if (x > y) {
-			return x;
-		} else {
-			return y;
-		}
+		// STUDENT-TODO
+		return 0;
 	}
 	
 	
@@ -58,23 +50,8 @@ public class Ex5If {
 	 * Output: "Tuesday"
 	 * */
 	public static String q4_getDayOfWeek(int day) {
-		if (day == 1) {
-			return "Monday";
-		} else if (day == 2) {
-			return "Tuesday";
-		} else if (day == 3) {
-			return "Wednesday";
-		} else if (day == 4) {
-			return "Thursday";
-		} else if (day == 5) {
-			return "Friday";
-		} else if (day == 6) {
-			return "Saturday";
-		} else if (day == 7) {
-			return "Sunday";
-		} else {
-			return "Invalid day";
-		}
+		// STUDENT-TODO
+		return "";
 	}
 	
 	/* Given an integer grade between 0 and 100, return the
@@ -90,19 +67,8 @@ public class Ex5If {
 	 * Output: "B"
 	 * */
 	public static String q5_getLetterGrade(int grade) {
-		String letter;
-		if (grade >= 86) {
-			letter = "A";
-		} else if (grade >= 70) {
-			letter = "B";
-		} else if (grade >= 60) {
-			letter = "C";
-		} else if (grade >= 50) {
-			letter = "D";
-		} else {
-			letter = "F";
-		}
-		return letter;
+		// STUDENT-TODO
+		return "";
 	}
 	
 	/* Given an integer, return whether or not the integer
@@ -113,24 +79,8 @@ public class Ex5If {
 	 * Output: "negative odd"
 	 * */
 	public static String q6_getPosNegOddEven(int n) {
-		if (n == 0) {
-			return "zero";
-		}
-		
-		String str = "";
-		if (n > 0) {
-			str += "positive ";
-		} else {
-			str += "negative ";
-		}
-		
-		if (n % 2 == 0) {
-			str += "even";
-		} else {
-			str += "odd";
-		}
-		
-		return str;
+		// STUDENT-TODO
+		return "";
 	}
 	
 	/* Given a students current grade and an integer n representing the change 
@@ -145,32 +95,7 @@ public class Ex5If {
 	 * Output: "A"
 	 * */
 	public static String q7_changeLetterGrade(String currentGrade, int n) {
-		if (n == 0) {
-			return currentGrade;
-		} else if (n > 0) {
-			if (currentGrade == "A") {
-				return "A";
-			} else if (currentGrade == "B") {
-				return "A";
-			} else if (currentGrade == "C") {
-				return "B";
-			} else if (currentGrade == "D") {
-				return "C";
-			} else {
-				return "D";
-			}
-		} else {
-			if (currentGrade == "A") {
-				return "B";
-			} else if (currentGrade == "B") {
-				return "C";
-			} else if (currentGrade == "C") {
-				return "D";
-			} else if (currentGrade == "D") {
-				return "E";
-			} else {
-				return "F";
-			}
-		}
+		// STUDENT-TODO
+		return "";
 	}
 }

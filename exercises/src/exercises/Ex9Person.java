@@ -65,35 +65,19 @@ public class Ex9Person {
 	// STUDENT-TODO
 	// Return true if this person is friends with the given input person
 	public Boolean hasFriend(Ex9Person person) {
-		return this.friends.contains(person);
-		/* Alternative solution
-		for (Ex4Person friend: this.friends) {
-			if (friend.equals(person)) {
-				return true;
-			}
-		}
 		return false;
-		*/
 	}
 	
 	// STUDENT-TODO
 	// Add a friend to this person's list of friends, if he isn't
 	// already a friend. You should also not be able to friend yourself.
 	public void addFriend(Ex9Person friend) {
-		if (!this.hasFriend(friend) && !this.equals(friend)) {
-			this.friends.add(friend);
-		}
 	}
 	
 	
 	// STUDENT-TODO
 	// Return true if this person has a friend with a given input name
 	public Boolean hasFriendWithName(String friendName) {
-		for (Ex9Person friend: this.friends) {
-			if (friend.getName() == friendName) {
-				return true;
-			}
-		}
 		return false;
 	}
 	
@@ -104,13 +88,7 @@ public class Ex9Person {
 	 * Hint: It will be helpful if the hasFriend method is implemented first
 	 * */
 	public List<Ex9Person> getMutualFriends() {
-		List<Ex9Person> mutualFriends = new ArrayList<Ex9Person>();
-		for (Ex9Person friend: this.friends) {
-			if (friend.hasFriend(this)) {
-				mutualFriends.add(friend);
-			}
-		}
-		return mutualFriends;
+		return null;
 	}
 
 	@Override
